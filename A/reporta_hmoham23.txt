@@ -1,0 +1,54 @@
+Compute Term Frequency:
+
+Thirty most frequent terms from the file streaming_output_full.txt
+
+
+Happiest state:
+
+Algorithm :
+
+    1. Sentiment word scores loaded in a map
+    2. Process every tweet text from the file:
+        - increment the total_word count 
+        - For every word in the tweet
+            - clean the individual words
+            - increment the individual tweet_score maintained in a map [term,total_word_count]
+        - Calculate freq=tweet_score/total_word_count for every term
+    4. Sort the map based on the tweet_score
+    5. Print [Term : freq] in descending order 
+
+Results:
+
+Term Freq
+
+rt 0.5015576323987538
+get 0.044132917964693666
+like 0.043094496365524405
+love 0.040498442367601244
+one 0.0347871235721703
+good 0.02699896157840083
+new 0.0264797507788162
+people 0.02544132917964694
+us 0.02232606438213915
+day 0.02232606438213915
+see 0.020768431983385256
+got 0.020249221183800622
+go 0.01973001038421599
+never 0.01973001038421599
+know 0.01973001038421599
+time 0.01921079958463136
+best 0.018172377985462097
+back 0.017653167185877467
+life 0.017653167185877467
+follow 0.017653167185877467
+happy 0.017133956386292833
+right 0.016614745586708203
+via 0.016614745586708203
+need 0.016095534787123573
+ever 0.016095534787123573
+much 0.016095534787123573
+really 0.015057113187954309
+want 0.015057113187954309
+many 0.015057113187954309
+rts 0.014537902388369679
+

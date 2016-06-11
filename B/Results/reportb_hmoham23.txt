@@ -1,0 +1,106 @@
+Sentiment of the tweets:
+
+Top 10 and bottom 10 tweets from streaming_output_full.txt:
+
+File : tweet_sentiment_hmoham23.py
+
+Algorithm :
+
+    1. Sentiment word scores loaded in a map
+    2. Process every tweet text:
+        - increment the word count
+        - For every word in the tweet
+            - clean the individual words
+            - increment the individual tweet score maintained in a map [tweet,(tweet_score,total_tweets)]
+        - Calculate tweetscore/totalscore
+    4. Sort the map
+    5. Print top 10 and bottom 10 tweets [Score : Tweet] 
+
+
+Output:
+
+Score : Tweet
+
+11.0 : RT @Emel7103: My beautiful friends @dinyrose31 @habibisilvia  I am very happy, thank you 🌸🍀🌸🍀 We love you 💖💖 @TugayHatayli ❤💋 https://t.co/…
+11.0 : RT @tponews: Last night, Trump won 60% of the delegates on offer. If he wins NY by over 50% he'll need to win just under 48% of the remaini…
+9.0 : RT @SyedMuhdFadli: Nikah is the best solution for two people who like each other, also this is the test who is sincere in feeling and who i…
+9.0 : RT @epPaulZimmer: does your skin ever do that thing where it’s clear and perfect for a couple days and then all of a sudden it’s like haha …
+9.0 : RT @epPaulZimmer: does your skin ever do that thing where it’s clear and perfect for a couple days and then all of a sudden it’s like haha …
+9.0 : @lucyhale karen pls wish @lucysmitchell a happy 18th bday!! i love you please wishes
+9.0 : wow can't wait to look like this again lol 😓🙄 https://t.co/azEJsvdpN7
+9.0 : @Harry_Styles just because someone like  you exists, i fell in love with  the world again. i love you  please mind following me?     16,084
+9.0 : @gatelab Thank you Claire I am very pleased to hear that. Very motivating to hear , all best wishes to you
+8.0 : hello @Harry_Styles, you've been my happy place for a while now and i wanna thank you for that, i love you a lot♡ -mind following? x 134,575
+-8.0 : RT @_ilyjackz: Watch me get no re tweets😂 cuz I'm ugly as fucking Donald trump😫😒 https://t.co/XNVse3WhwW
+-9.0 : The fuck is an aires illiterate cunt did u mean Aries dissin on my sign smh https://t.co/0TWwkEd8E0
+-9.0 : RT @glofuI: anxiety really sucks. you unintentionally make yourself sad, you feel alone even when you're not and sometimes dont even know w…
+-9.0 : Will not be disrespected, nigga or bitch 💯
+-11.0 : RT @LUClDITY: why am I being such a depressed bitch right now I do not fucking approve
+-11.0 : Hate begets more hate and that begets violence. Hating Islam will not make the violence end, it will just continue the cycle. #tytlive
+-11.0 : RT @LUClDITY: why am I being such a depressed bitch right now I do not fucking approve
+-11.0 : RT @LUClDITY: why am I being such a depressed bitch right now I do not fucking approve
+-12.0 : "i'm an asshole but i'm your asshole" -bob on ruining my ball-posal but not wanting me to ruin his prom-posal
+-17.0 : RT @girlposts: I have 3 types of mad: 1)when I'm so mad I just cry 2)when I'm mad as fuck and just snap 3)when I'm mad and don't wanna talk…
+
+
+
+
+
+Happiest Breaking Bad actor:
+
+Algorithm :
+
+    1. Sentiment word scores loaded in a map
+    2. Process every tweet text from csv:
+        - increment the total_tweets count for every actor in the map
+        - For every word in the tweet
+            - clean the individual words
+            - increment the individual tweet score maintained in a map [actor, (tweet_score,total_tweets)]
+        - Calculate average_sentiment=tweet_score/total_tweets for every actor
+    4. Sort the map based on the average_sentiment
+    5. Print [Score : Actor] in descending order
+
+
+Output:
+
+Score : Actor
+
+2.09 : mrbobodenkirk
+2.01010101010101 : Krystenritter
+1.7676767676767677 : quiethandfilms
+1.67 : betsy_brandt
+1.6666666666666667 : aaronpaul_8
+1.64 : deanjnorris
+1.5876288659793814 : RjMitte
+1.443298969072165 : DanielMoncada80
+1.4141414141414141 : CharlesEbaker
+1.34 : BryanCranston
+1.2268041237113403 : LuisMoncada77
+-0.052083333333333336 : mattjonesisdead
+
+Happiest state:
+
+Algorithm :
+
+    1. Sentiment word scores loaded in a map
+    2. Process every tweet text from the file:
+        - increment the total_tweets count for every state in the map
+        - For every word in the tweet
+            - clean the individual words
+            - increment the individual tweet score maintained in a map [state, (tweet_score,total_tweets)]
+        - Calculate average_sentiment=tweet_score/total_tweets for every state
+    4. Sort the map based on the average_sentiment
+    5. Print [Score : State] in descending order 
+
+Score : State
+
+6.0 : WV
+5.0 : PA
+5.0 : TN
+3.0 : CT
+2.6666666666666665 : OH
+0.0 : SC
+-1.0 : AR
+-1.0 : IN
+-2.3333333333333335 : NY
+-2.5 : KY
